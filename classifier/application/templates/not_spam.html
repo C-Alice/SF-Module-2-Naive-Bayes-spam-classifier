@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>NB Spam Filter</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+ <div class = "login">
+    <h2>This is not spam. You can read it safely!</h2>
+    <details>
+      <summary>Read email</summary>
+           {{text}}
+     </details>
+    <p style = "font-size:20px"><a href="." style = "color: white"><i>Check other emails</i></a>
+    <h3>If you are still in doubt, press the button below</h3>
+    <form method="post" action = "./classify_text">
+        <button type="submit"  class = "btn btn-primary btn-block btn-large" name = "action" value="Report spam" >Report spam</button>
+    </form>
+ </div>
+</body>
+
+
+</body>
+</html>
