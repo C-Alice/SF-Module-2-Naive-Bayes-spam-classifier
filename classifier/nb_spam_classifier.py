@@ -38,7 +38,6 @@ class NaiveBayesSpamFilter():
             body = X.loc[i]
             label = y.loc[i]
             self.calculate_word_frequencies(body, label)
-    #     return dict_SpamOrNot
 
     def calculate_P_Bi(self,word, label): 
         V = len(set(self.dict_SpamOrNot['SPAM'].keys()) | set(self.dict_SpamOrNot['NOT_SPAM'].keys()))
