@@ -1,11 +1,11 @@
 ## Main task
 
-The purpose of this project was to write and train a model, that would predict if the given text was spam or not.
+The purpose of this project was to create and train a model, that would predict if the given text was spam or not.
 
 ## Theory
 
 Spam filtering using Naive Bayes Classifier is one of the oldest and simplest ways to deal with spam.
-Let's dive a little bit dipper into the method.
+Let's dive a little bit deeper into the method.
 
 The Naive Bayes Classifier is based on Bayes' theorem.
 
