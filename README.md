@@ -18,7 +18,7 @@ Where,
 - P(A) - unconditional probability of meeting a spam email among all emails;
 - P(B) - unconditional probability of the email B among emails.
 
-To understand which class an email belongs to, we need to calculate probabilities for all classes and chose the class with the highest probability.
+To understand which class an email belongs to, we need to calculate probabilities for all classes and choose the class with the highest probability.
 
 When we use Naive Bayes method, we presume that all the words in the text are independent (unlike in natural language).
 That assumption allows us to approximate the conditional probability of the text (P(B|A)) by the product of the conditional probabilities of all the words included in the text.
